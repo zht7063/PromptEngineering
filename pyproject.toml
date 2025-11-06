@@ -1,0 +1,17 @@
+[project]
+name = "promptengineering"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain-openai>=1.0.2",
+    "pydantic>=2.12.4",
+]
+
+[tool.ruff]
+# 允许非 ASCII 字符（包括中文逗号、句号等）
+respect-gitignore = true
+target-version = "py310"
+extend-ignore = ["W291", "W293", "E501", "E231", "E999", "C901", "RUF001", "RUF002", "RUF003"]
